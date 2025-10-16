@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  max-width: 880px;
+  height: 74px;
+  border-width: 1px solid;
+  margin: 0 auto;
+  padding-bottom: 41px;
+}
+
+.header__logo {
+  justify-content: flex-start;
+  width: 173px;
+  height: 33px;
+  margin-top: 45px;
+}
+
+.header__line-image {
+  display: block;
+  width: 880px;
+  height: 1px;
+  opacity: 0.7;
+  margin: 0 auto;
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .header__logo {
+    width: 126px;
+    height: 24px;
+    margin-left: 27px;
+    margin-top: 28px;
+  }
+}

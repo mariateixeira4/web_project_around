@@ -1,0 +1,22 @@
+.page {
+  background-color: #000000;
+  width: 100;
+  box-sizing: border-box;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    min-height: 1659px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .page {
+    min-height: 1550px;
+    min-width: 320px;
+  }
+}

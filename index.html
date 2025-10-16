@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Maria Eduarda T Correia" />
+    <meta name="description" content="perfil e fotos" />
+    <meta name="keywords" content="fotos, paisagens, lugares, perfil" />
+    <title>Around the U.S</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="images/header.png"
+            alt="logo Around the us"
+            class="header__logo-image"
+          />
+        </div>
+      </header>
+      <img src="images/Line.png" alt="" class="header__line-image" />
+      <main class="content">
+        <section class="profile">
+          <div class="profile__container">
+            <div class="profile__avatar-container">
+              <img
+                src="images/Avatar.png"
+                alt="Um homem idoso sorrindo"
+                class="profile__image"
+              />
+            </div>
+            <div class="profile__info">
+              <div class="profile__name-container">
+                <h1 class="profile__name">Jacques Cousteau</h1>
+                <button
+                  class="profile__button profile__edit-button"
+                  type="button"
+                >
+                  <img
+                    src="images/EditButton.png"
+                    alt="Editar perfil"
+                    class="profile__button-icon"
+                  />
+                </button>
+              </div>
+              <p class="profile__text">Explorador</p>
+            </div>
+            <button class="profile__button profile__add-button" type="button">
+              +
+            </button>
+          </div>
+        </section>
+        <section class="elements">
+          <ul class="elements__list">
+            <!-- Os cards vão aparecer aqui pelo JavaScript -->
+          </ul>
+        </section>
+
+        <section class="popup" id="editProfilePopup">
+          <div class="popup__container">
+            <button
+              class="popup__close-button"
+              type="button"
+              id="closePopupButton"
+            >
+              <img
+                src="images/Close.png"
+                alt="Botão de fechar"
+                class="popup__close-icon"
+              />
+            </button>
+            <form class="popup__form" id="addProfile">
+              <fieldset class="popup__fieldset">
+                <h3 class="popup__text">Editar perfil</h3>
+                <input
+                  class="popup__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  autocomplete="name"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <span class="popup__error" id="name__error"></span>
+                <input
+                  class="popup__input"
+                  type="text"
+                  name="about"
+                  id="area"
+                  placeholder="Sobre mim"
+                  minlength="2"
+                  maxlength="200"
+                  required
+                />
+                <span class="popup__error" id="area__error"></span>
+              </fieldset>
+              <button class="popup__button" type="submit">Salvar</button>
+            </form>
+          </div>
+        </section>
+        <section class="popup" id="addPostPopup">
+          <div class="popup__container">
+            <button
+              class="popup__close-button"
+              type="button"
+              id="CloseAddPopup"
+            >
+              <img
+                src="images/Close.png"
+                alt="Botão de fechar"
+                class="popup__close-icon"
+              />
+            </button>
+            <form class="popup__form" id="addPostForm">
+              <fieldset class="popup__fieldset">
+                <h3 class="popup__title">Novo Local</h3>
+                <input
+                  class="popup__input"
+                  name="name"
+                  type="text"
+                  id="title"
+                  placeholder="Título"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <span class="popup__error" id="title__error"></span>
+                <input
+                  class="popup__input"
+                  name="link"
+                  type="url"
+                  id="image-link"
+                  placeholder="Link de imagem"
+                  required
+                />
+                <span class="popup__error" id="image-link-error"></span>
+              </fieldset>
+              <button class="popup__button" type="submit">Criar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">© 2025 Around The U.S.</p>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
