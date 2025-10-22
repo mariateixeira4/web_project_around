@@ -36,4 +36,12 @@
     margin-left: 27px;
     margin-top: 28px;
   }
+
+  .header__line-image {
+    width: 320px;
+    height: 1px;
+    margin: 0 auto;
+    opacity: 0.7;
+    border: none;
+  }
 }

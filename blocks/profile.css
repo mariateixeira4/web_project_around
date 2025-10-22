@@ -92,3 +92,89 @@
 .profile__edit-button:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 544px) {
+  .profile {
+    margin-top: 20px;
+  }
+
+  .profile__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .profile__image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile__info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Nome + botão de editar na mesma linha */
+  .profile__name-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Nome do perfil */
+  .profile__name {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 22px; /* atualizado */
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Botão de editar */
+  .profile__edit-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .profile__edit-button img {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Texto do perfil */
+  .profile__text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px; /* atualizado */
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .profile__add-button {
+    width: 90%;
+    max-width: 282px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .profile__add-button img {
+    width: 18px;
+    height: 18px;
+  }
+}
