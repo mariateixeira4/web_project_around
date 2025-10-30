@@ -12,3 +12,7 @@ HTML
 CSS
 JavaScript
 Metodologia BEM
+
+# GitHub Pages
+
+https://mariateixeira4.github.io/web_project_around/
