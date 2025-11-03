@@ -55,21 +55,19 @@ const initialCards = [
   { name: "Lago di Braies", link: "images/Lago.png" },
 ];
 
+const cardTemplate = document.querySelector("#card-template");
+
 function renderCard(cardData) {
-  const cardElement = document.createElement("li");
-  cardElement.classList.add("element");
+  const cardElement = cardTemplate.content.cloneNode(true);
 
-  cardElement.innerHTML = `
-    <img src="${cardData.link}" alt="${cardData.name}" class="element__image" />
-    <div class="element__info">
-      <div class="element__title-wrapper">
-        <h2 class="element__title block">${cardData.name}</h2>
-        <button class="element__like-button" type="button"></button>
-      </div>
-    </div>
-  `;
-
+  const image = cardElement.querySelector(".element__image");
+  const title = cardElement.querySelector(".element__title");
   const likeButton = cardElement.querySelector(".element__like-button");
+
+  image.src = cardData.link;
+  image.alt = cardData.name;
+  title.textContent = cardData.name;
+
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("element__like-button_active");
   });

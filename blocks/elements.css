@@ -75,6 +75,65 @@
   background-image: url(../images/coracaopreenchido.svg);
 }
 
+/*@media screen and (max-width: 1024px) {
+  .elements__list {
+    grid-template-columns: repeat(2, 282px);
+    gap: 17px;
+    padding-top: 36px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .elements__list {
+   grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 282px;
+    gap: 20px;
+    padding-top: 36px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;*
+  }
+
+  .element {
+    width: 100%;
+    max-width: 282px;
+    height: 361px;
+    margin: 0 auto;
+  }
+
+  .element__image {
+    height: 282px;
+    width: 100%;
+  }
+
+  .element__title-wrapper {
+    padding: 25px 15px 31px 21px;
+  }
+
+  .element__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .element__like-button {
+    width: 21px;
+    height: 19px;
+  }
+}*/
+
+/* Tablet - 2 colunas */
+@media screen and (max-width: 1024px) {
+  .elements__list {
+    grid-template-columns: repeat(2, 282px);
+    gap: 17px;
+    padding-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Mobile - 1 coluna */
 @media screen and (max-width: 544px) {
   .elements__list {
     grid-template-columns: 1fr;
