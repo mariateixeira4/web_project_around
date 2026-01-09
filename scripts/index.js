@@ -112,7 +112,7 @@ function renderCard(cardData) {
     openPopup(popupImage);
   });
 
-  cardsWrapper.append(cardElement);
+  cardsWrapper.prepend(cardElement);
 }
 
 initialCards.forEach((card) => renderCard(card));
