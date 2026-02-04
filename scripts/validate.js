@@ -69,7 +69,6 @@ const enableValidation = (config) => {
   });
 };
 
-// Adicione esta função no final do arquivo validate.js
 const resetValidation = (formElement, config) => {
   const inputList = Array.from(
     formElement.querySelectorAll(config.inputSelector),
