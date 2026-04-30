@@ -12,6 +12,7 @@ HTML
 CSS
 JavaScript
 Metodologia BEM
+API
 
 # GitHub Pages
 

@@ -203,6 +203,19 @@
   background-color: #ffffff;
 }
 
+.popup__container_type_confirm {
+  min-height: 181px;
+  justify-content: center;
+}
+
+.popup__container_type_confirm .popup__title {
+  margin-bottom: 20px;
+}
+
+.popup__container_type_confirm .popup__button {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 544px) {
   .popup__container {
     width: 282px;

@@ -105,6 +105,40 @@
   opacity: 0.6;
 }
 
+.profile__avatar-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.profile__avatar-edit-button {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__avatar-container:hover .profile__avatar-edit-button {
+  opacity: 1;
+}
+
+.profile__avatar-edit-button::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/lapis.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 @media screen and (max-width: 544px) {
   .profile {
     margin-top: 42px;
