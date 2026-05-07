@@ -163,16 +163,17 @@ export default class Card {
     this._cardImage = this._element.querySelector(".element__image");
     this._cardTitle = this._element.querySelector(".element__title");
 
+    // 🔥 pega user atual
+    const currentUserId = this._getCurrentUserId();
+
     // 🔥 DEBUG
     console.log("OWNER:", this._ownerId);
-    console.log("CURRENT USER:", this._getCurrentUserId());
+    console.log("CURRENT USER:", currentUserId);
 
-    // 🔥 só dono vê lixeira
-    if (this._ownerId !== this._getCurrentUserId()) {
-      if (this._deleteButton) {
-        this._deleteButton.remove();
-        this._deleteButton = null;
-      }
+    // 🔥 só mostra lixeira se for dono
+    if (String(this._ownerId) !== String(currentUserId)) {
+      this._deleteButton.remove();
+      this._deleteButton = null;
     }
 
     this._setEventListeners();
