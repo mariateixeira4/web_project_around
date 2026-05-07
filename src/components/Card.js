@@ -162,7 +162,6 @@ export default class Card {
     this._cardImage = this._element.querySelector(".element__image");
     this._cardTitle = this._element.querySelector(".element__title");
 
-    // 🔥 CORREÇÃO FINAL DO DONO
     if (this._ownerId !== this._getCurrentUserId()) {
       if (this._deleteButton) {
         this._deleteButton.remove();
