@@ -106,8 +106,8 @@ export default class Card {
 
     this._id = data._id;
 
-    // 🔥 CORREÇÃO PRINCIPAL AQUI
-    this._ownerId = data.owner._id || data.owner;
+    this._ownerId =
+      typeof data.owner === "object" ? data.owner._id : data.owner;
 
     this._getCurrentUserId = getCurrentUserId;
 
