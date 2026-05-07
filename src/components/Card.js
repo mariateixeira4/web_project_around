@@ -106,6 +106,7 @@ export default class Card {
 
     this._id = data._id;
 
+    // 🔥 owner pode vir como objeto OU string
     this._ownerId =
       typeof data.owner === "object" ? data.owner._id : data.owner;
 
@@ -162,6 +163,11 @@ export default class Card {
     this._cardImage = this._element.querySelector(".element__image");
     this._cardTitle = this._element.querySelector(".element__title");
 
+    // 🔥 DEBUG
+    console.log("OWNER:", this._ownerId);
+    console.log("CURRENT USER:", this._getCurrentUserId());
+
+    // 🔥 só dono vê lixeira
     if (this._ownerId !== this._getCurrentUserId()) {
       if (this._deleteButton) {
         this._deleteButton.remove();
